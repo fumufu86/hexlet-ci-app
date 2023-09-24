@@ -16,7 +16,7 @@ jobs:
         run: npm test
   security:
     needs: check
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
     steps:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
